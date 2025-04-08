@@ -1,0 +1,63 @@
+    .root {
+        -fx-background-color: #000000;
+    }
+
+    .button:hover {
+        -fx-background-color: #434343;
+    }
+
+    #email-field {
+        -fx-background-color: transparent;
+        -fx-text-fill: #ffffff;
+        -fx-border-color: #6d6d6d;
+        -fx-border-width: 2;
+        -fx-border-radius: 10;
+        -fx-border-style: solid;
+        -fx-border-insets: 0;
+    }
+
+    #login-btn {
+        -fx-background-color: #9cdd8a;
+        -fx-border-radius: 10;
+    }
+
+
+    #sidebar {
+        -fx-background-color: #000000;
+    }
+
+    #sidebar .button {
+        -fx-background-color: transparent;
+    }
+    #sidebar > .button:hover {
+        -fx-background-color: #434343;
+    }
+
+    #sidebar > .button:focus {
+        -fx-background-color: #434343;
+    }
+
+    #total-balance  {
+        -fx-border-radius: 10;
+        -fx-background-radius: 10;
+    }
+
+    #total-income {
+        -fx-border-radius: 10;
+        -fx-background-radius: 10;
+    }
+
+    #total-outcome {
+        -fx-border-radius: 10;
+        -fx-background-radius: 10;
+    }
+
+    #weekly-summary {
+        -fx-border-radius: 10;
+        -fx-background-radius: 10;
+    }
+
+    #revenue {
+        -fx-border-radius: 10;
+        -fx-background-radius: 10;
+    }
