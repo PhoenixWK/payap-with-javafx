@@ -17,4 +17,5 @@ module com.finance.payap {
     exports com.finance.payap.controller.ui_controller;
 
     opens com.finance.payap to spring.beans, spring.context, javafx.fxml;
+    opens com.finance.payap.controller.ui_controller to javafx.fxml;
 }
