@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="loginPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="823.0" styleClass="root" stylesheets="@../stylesheets/style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.finance.payap.controller.ui_controller.SignUpFormUiViewController">
+   <right>
+      <ImageView fitHeight="538.0" fitWidth="420.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <Image url="@../images/main.png" />
+      </ImageView>
+   </right>
+   <left>
+      <VBox prefHeight="620.0" prefWidth="372.0" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets top="20.0" />
+         </padding>
+         <Pane id="header-form" prefHeight="598.0" prefWidth="385.0">
+            <padding>
+               <Insets top="20.0" />
+            </padding>
+            <ImageView fitHeight="40.0" fitWidth="43.0" layoutX="22.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <Image url="@../images/Payap.png" />
+            </ImageView>
+            <Text fill="WHITE" layoutX="68.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Payap">
+               <font>
+                  <Font name="Arial Bold" size="23.0" />
+               </font>
+            </Text>
+            <AnchorPane layoutX="22.0" layoutY="79.0" prefHeight="457.0" prefWidth="348.0">
+               <Text fill="WHITE" layoutX="104.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign Up">
+                  <font>
+                     <Font name="System Bold" size="38.0" />
+                  </font>
+               </Text>
+               <VBox layoutY="77.0" prefHeight="334.0" prefWidth="348.0">
+                  <HBox prefHeight="61.0" prefWidth="348.0" spacing="10.0">
+                     <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                        <Text fill="#6d6d6d" strokeType="OUTSIDE" strokeWidth="0.0" text="First name">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Text>
+                        <TextField id="email-field" fx:id="email_field" layoutY="7.0" prefHeight="48.0" prefWidth="165.0" stylesheets="@../stylesheets/style.css" />
+                     </AnchorPane>
+                     <AnchorPane prefHeight="58.0" prefWidth="172.0">
+                        <Text id="password_label" fill="#6d6d6d" strokeType="OUTSIDE" strokeWidth="0.0" text="Last name">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Text>
+                        <TextField id="email-field" fx:id="password_field" layoutY="7.0" prefHeight="48.0" prefWidth="172.0" />
+                     </AnchorPane>
+                  </HBox>
+                  <AnchorPane prefHeight="66.0" prefWidth="348.0">
+                     <Text fill="#6d6d6d" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email">
+                        <font>
+                           <Font name="System Bold" size="18.0" />
+                        </font>
+                     </Text>
+                     <TextField id="email-field" fx:id="email_field1" layoutY="32.0" prefHeight="48.0" prefWidth="348.0" stylesheets="@../stylesheets/style.css" />
+                  </AnchorPane>
+                  <AnchorPane prefHeight="58.0" prefWidth="348.0">
+                     <Text fill="#6d6d6d" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+                        <font>
+                           <Font name="System Bold" size="18.0" />
+                        </font>
+                     </Text>
+                     <TextField id="email-field" fx:id="email_field11" layoutY="39.0" prefHeight="48.0" prefWidth="348.0" stylesheets="@../stylesheets/style.css" />
+                  </AnchorPane>
+                  <AnchorPane prefHeight="58.0" prefWidth="348.0">
+                     <Text fill="#6d6d6d" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Confirm password">
+                        <font>
+                           <Font name="System Bold" size="18.0" />
+                        </font>
+                     </Text>
+                     <TextField id="email-field" fx:id="email_field111" layoutY="39.0" prefHeight="48.0" prefWidth="348.0" stylesheets="@../stylesheets/style.css" />
+                  </AnchorPane>
+                  <AnchorPane prefHeight="58.0" prefWidth="348.0">
+                     <Text fill="#eeeeee" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Have an account?">
+                        <font>
+                           <Font size="14.0" />
+                        </font>
+                     </Text>
+                     <Button id="login-btn" fx:id="signup_btn" layoutX="122.0" layoutY="50.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="102.0" stylesheets="@../stylesheets/style.css" text="Button">
+                        <font>
+                           <Font name="System Bold" size="12.0" />
+                        </font>
+                     </Button>
+                     <Button fx:id="login_btn" layoutX="109.0" layoutY="11.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="sign in" textFill="#9cdd8a" />
+                  </AnchorPane>
+               </VBox>
+            </AnchorPane>
+         </Pane>
+      </VBox>
+   </left>
+</BorderPane>

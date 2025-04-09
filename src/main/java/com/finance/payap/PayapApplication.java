@@ -32,6 +32,7 @@ public class PayapApplication extends Application {
 		stage.setTitle("Payap Finance Tracker");
 		stage.getIcons().add(new Image(Objects.requireNonNull(PayapApplication.class.getResourceAsStream("/images/Payap.png"))));
 		stage.setScene(scene);
+		stage.setResizable(false);
 		stage.show();
 	}
 
